@@ -1,0 +1,48 @@
+\doc
+
+TITLE. Aboveground net primary productivity data for Saddle grid plots, 1992 - ongoing. 
+
+ABSTRACT. Total aboveground live vascular biomass was clipped from 50x20 cm plots in areas near the saddle grid permanent plots on Niwot Ridge to measure net primary productivity. 
+
+INVESTIGATOR. Hope Humphries, INSTAAR, 4001 Discovery Drive, UCB 450, University of Colorado, Boulder, CO, 80303, (303)492-2594, hope.humphries@colorado.edu.
+
+VARIABLES. year, saddle grid point, subsample, vegetation class, NPP.
+
+KEYWORDS. aboveground biomass, net primary productivity, production, live, vascular, standing crop, NPP, annual, saddle, grid point, subsample, plot size, vegetation class, Niwot Ridge LTER, NWT, primary_productivity, long term
+
+LOCATION. Study sites were located adjacent to saddle grid permanent plots.
+
+TIMING. begin 1992, ongoing, irregular before 2010, then yearly.
+
+CITATIONS. [1]Walker, M.D., P.J. Webber, E.H. Arnold, and D. Ebert-May. 1994. Effects of interannual climate variation on aboveground phytomass in alpine vegetation. Ecology 75:393-408.
+
+METHODS. Sampling of NPP was conducted in the same vegetation class as that of the associated saddle grid permanent plot. 
+From 1992 to 1997, all aboveground biomass was harvested from a subplot using a razor blade. When it was easy to do so, non-vascular plant biomass (non-Selaginella densa lichens and mosses, insects, soil, rocks, etc.) was excluded from the collected sample. Samples were then frozen until they could be processed (sorted, dried, and weighed). A sample was sorted into weighing tins (for each of the primary (i.e., not derived) biomass categories) and the sorted portions, as well as the unsorted portion, of the sample was returned to the freezer until the sorting of that sample was completed. The weighing tins were labelled (using small pieces of paper) with the Saddle grid point number and the primary biomass category. Once the sample was sorted, the weighing tins were placed in a drying oven for 24 hr (or until dry) at 60 degrees Celsius. Once the samples had been dried, an empty weighing tin was tared and then each of the tins containing the biomass samples was weighed (with the paper labels temporarily removed). The weighing was done immediately after removal from the oven to minimize reabsorption of water by the plant material. The weights were recorded on hard-copy laboratory data forms. Individual samples were then placed in plastic bags, along with the paper label for each, and all of the bags for samples from a given Saddle grid point were placed in larger plastic bag labelled with the Saddle grid point and harvest date. 
+From 1992 to 1997, biomass was sorted into several categories (See metadata in http://niwot.colorado.edu/saddbiom.mw.meta.txt). The data in this data set include only the total aboveground vascular biomass measurements.
+Data collected in fellfield and dry meadow plots for 1992-1997 have been excluded from this data set because it is likely that woody biomass from cushion/mat-forming plants was included in the samples and therefore they do not truly represent NPP.
+Starting in 2008, a whisker was used to mark a given year's sampling location near its associated permanent grid plot. Two 0.1 m2 quadrats (50 x 20 cm) were clipped with either scissors or razor blades. The first quadrat (A) was placed with its southwest corner next to the whisker, with the long side parallel to the slope. The second quadrat (B), was placed 0.5 m to the north of the first quadrat, also with the long side parallel to the slope. All the current year’s growth of vascular plants within a quadrat was clipped, placed in a drying oven, and weighed after drying. Samples were then returned to the paper sampling bags. Sample weight in grams was converted to g/m2. Non-vascular species (e.g., lichens and mosses) were excluded from sampling, as was woody biomass from shrubs and cushion/mat-forming plants.
+Codes used for vegetation classes are as follows: FF=fellfield, DM=dry meadow, MM=moist meadow, ST=shrub tundra, SB=snowbed, WM=wet meadow, SF=snowfence
+
+\type
+
+statistical
+
+\header
+
+COL1. label=year, type=integer, units=none, missing value indicator=NaN, minimum=, maximum=, precision=, definition=year (yyyy)
+
+COL2. label=grid_pt, type=integer, units=none, missing value indicator=NaN, minimum=, maximum=, precision=, definition=saddle grid point
+
+COL3. label=subsample, type=string, units=none, missing value indicator=NaN, minimum=, maximum=, precision=, definition=subsample code - none, A, or B if more than one plot was sampled per location
+
+COL3. label=veg_class, type=string, units=none, missing value indicator=NaN, minimum=, maximum=, precision=, definition=vegetation class: FF=fellfield, DM=dry meadow, MM=moist meadow, ST=shrub tundra, SB=snowbed, WM=wet meadow, SF=snowfence
+
+COL4. label=NPP, type=real, units=gramPerMeterSquared, missing value indicator=NaN, minimum=, maximum=, precision=, definition=live aboveground vascular net primary productivity
+
+\data
+
+http://niwot.colorado.edu/exec/data_csvs/saddle_grid_npp.hh.data.csv
+
+\log
+
+This data set was first made available as a separate data set in June 2015.[HCH 24 June 2015] Units were edited.[HCH 24 May 2-16]

@@ -1,0 +1,224 @@
+---
+bibliography: ~/Dropbox/Bibliography/Niwot_Proposal.bib
+csl: components/ecology_letters.csl
+fontsize: 12pt
+geometry: margin=1in
+header-includes:
+- \usepackage{lineno}
+- \usepackage{rotating}
+- \usepackage{times}
+- \usepackage{color, soul}
+- \usepackage{enumitem}
+- \usepackage[document]{ragged2e}
+- \usepackage[font={footnotesize},labelfont={sf,bf},labelsep=space]{caption}
+- \usepackage{titlesec}
+- \titleformat{\section}{\normalfont\fontsize{14}{15}\bfseries}{\thesection}{0 em}{}
+- \titleformat{\subsection}{\normalfont\fontsize{12}{15}\bfseries}{\thesubsection}{0 em}{}
+- \titlespacing{\section}{0pt}{\parskip}{-\lineskip}
+- \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+layout: 12pt
+linkcolor: black
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: no
+urlcolor: black
+---
+
+\pagenumbering{roman}
+\begin{description}
+
+\item[Short title:]{Compensatory dynamics in space and time}
+\item[Name:]{Andrew Tredennick}
+\item[Contact information:] { ~\\
+  email: atredenn@gmail.com \\
+  phone: 970-443-1599}
+\item[Date of Ph.D.:]{August 2014 (Colorado State University)} 
+
+\end{description}
+
+\newpage{}
+\begin{center}
+\large{\bf{Project Summary}}
+\end{center}
+
+\begin{description}
+\item[Project Summary:]{
+Ecosystems are intrinsically hierarchical, meaning that lower-level dynamics influence higher-level functioning.
+For example, unique responses of populations and species to variable environmental conditions can buffer ecosystem-level function in space and time.
+Understanding the degree to which such unique responses generate compensatory dynamics is key to understanding the consequences of climate change.
+This project seeks to answer four questions motivated by \textbf{Hypothesis H3} in the NWT LTER VII proposal: (1) Do compensatory dynamics contribute to ecosystem stability, and at what temporal and spatial scales? (2) What are the climate drivers of compensatory dynamics in space and time? (3) Will predicted climate change increase or decrease compensatory dynamics? And (4) Do opposing demographic responses to climate create compensatory dynamics among populations within species?
+To answer these questions I will use several Niwot Ridge LTER vegetation data sets that are temporally and spatially replicated coupled with population modeling approaches.
+Answering my questions will lead to a predictive understanding of how focal ecosystems at Niwot may respond to climate change and advance our fundamental knowledge of the causes and consequences of compensatory dynamics.
+Results from this project are also essential for testing \textbf{Hypthesis H4} in the NWT LTER VII proposal. 
+}
+
+\item[Keywords:]{\emph{synchrony, stability, portfolio effects, spatial insurance effect, climate}}
+
+\item[Potential Conflicts of Interest:]{None.}
+\end{description}
+
+\newpage{}
+
+\pagenumbering{arabic}
+\begin{center}
+\large{\bf{Research Proposal: Synthesizing long-term data to understand the causes and consequences of compensatory dynamics in space and time}}
+\end{center}
+
+\setlength{\parindent}{0ex}
+\setlength{\belowcaptionskip}{-10pt}
+
+\section{Background}
+What makes ecosystem functioning stable through time (e.g., low variability of biomass through time), or not, has puzzled ecologists for decades and has profound implications for ecosystem management in an increasingly variable world.
+It is now clear that more species rich ecosystems tend to be more stable, in part because of compensatory dynamics [@Loreau2008a].
+Compensatory dynamics arise when species' fluctuations through time are not in perfect synchrony, either as a result of interspecific competition or species-specific responses to environmental conditions [@Loreau2008a; @Gonzalez2009].
+Thus, understanding the causes and consequences of compensatory dynamics in natural ecosystems is essential to understanding ecosystem stability.
+A mechanistic understanding of compensatory dynamics is also necessary to predict how increasing climate variability will impact the stability of ecosystem functioning.
+
+For the past 30 years, research on ecosystem stability has focused on the role of species fluctuations through time within local communities.
+But across landscapes, a hierarchical perspective reveals the importance of compensatory dynamics among local populations, species, and communities in space and time [@Wang2014].
+For example, the stability of aggregated ecosystem functioning depends on the synchrony of spatially distributed communities through time and the synchrony of species within communities.
+Compensatory dynamics among local communities can arise through species turnover [@Wang2014] or populations responding uniquely to environmental conditions because of demographic trade-offs [@Doak2010].
+Such spatial dynamics are probably strong drivers of ecosystem stability at the landscape scale, but we know little about how important they are relative to local temporal dynamics.
+
+The goals of this project are to understand the causes and consequences of compensatory dynamics across levels of spatial and ecological organization.
+The Niwot Ridge Long Term Ecological Research (NWT) station's "Saddle Grid" is an ideal system to gain this fundamental understanding because it is spatially heterogeneous, has a strong environmental gradient across space (snow depth), there is species turnover in space, and has long-term data that is necessary to estimate temporal dynamics.
+I will use the long-term tundra vegetation data sets and dynamic multispecies population models to attribute the buffering effect of compensatory dynamics to specific mechanisms in space and time.
+The tight coupling of data and models will allow me to predict the impacts of realistic climate change scenarios on compensatory dynamics and ecosystem stability. 
+
+
+\section{Research Questions}
+This project is built around four questions motivated by **Hypothesis H3** in the NWT LTER VII proposal: "Asynchronous responses to climate within one level of organization will combine to reduce variability at a higher, aggregated, level. Climate change will increase synchronicity through shared tolerance and growth constraints."
+
+\begin{description}
+
+\item[Q1.] \textbf{Do compensatory dynamics at lower-levels stabilize higher-level function?} Theory and experimental work shows that compensatory dynamics can stabilize ecosystem functioning through time, but the importance of compensatory dynamics in natural systems remains less understood. In particular, the role of spatial asynchrony, and what determines it, in stabilizing function as spatial scale increases is virtually unknown. To answer this question I will calculate and compare the variability of ecosystem functioning at multiple hierarchical levels (e.g., population, species, and community).
+
+\item[Q2.] \textbf{What are the environmental drivers of observed compensatory dynamics?} The degree of compensatory dynamics is determined by how components respond to environmental conditions and how components interact. To answer this question I will fit dynamic multispecies population models with species-specific effects for climate covariates (e.g., snow depth and temperature).
+
+\item[Q3.] \textbf{Will predicted climate change cause stability to increase or decrease through its affect on compensatory dynamics?} Depending on how components respond in space and time, synchrony could increase or decrease as the climate becomes more variable. To answer this question I will simulate the multispecies model developed for Q2 under climate change scenarios of increasing means, variances, and both.
+
+\item[Q4.] \textbf{Do opposing demographic responses to climate create compensatory dynamics among populations within species?} Answering questions Q1 and Q2 will show if compensatory dynamics among populations in different locations exist, but the mechanism for those dynamics will be unknown. To answer this question I will analyze how vital rates of different populations of four abundant tundra species respond to climate variables.
+
+\end{description}
+
+\section{Methods}
+\subsection{Data}
+To address questions Q1-Q3 I will use the Saddle Grid "tundra vegetation" data sets coupled with snow depth data (```saddptqd.hh.data.csv```, ```saddle_grid_npp.hh.data.csv```, and ```saddsnow.dw.data.csv```).
+As I show below, the temporal and spatial resolution of these data are appropriate for fitting dynamic population models.
+For question Q4 I will rely on previously collected demographic data for *Silene* and *Bistorta* species [@Doak2010] and new data on additional species proposed for NWT LTER VII (*Carex*, *Deschampsia*, *Geum*, and *Kobresia* species).
+
+\subsection{Q1: Do compensatory dynamics stabilize higher-level processes?}
+To answer this question I will calculate the temporal coefficient of variability (*CV*) of species, functional groups, communities, and the ecosystem.
+If compensatory dynamics are present, then the *CV* of any given level will be less than the *CV* of its components [@Bai2004].
+For example, the *CV* of total ecosystem cover through time will be less than the mean *CV* of component functional groups if the fluctuations of individual functional groups are not perfectly synchronous through time.
+Likewise, if the *CV* of local community annual net primary productivity (ANPP) is greater than the *CV* of aggregated ANPP, then spatial asynchrony is important.
+
+\begin{figure}
+  \centering
+     \includegraphics[width=6.5in]{./figures/figure1.png}
+  \caption{An example analysis using simulated data. (A) A simulated landscape with 64 sample points and a snow depth gradient. (B) The posterior distributions of snow effects for each species ($\gamma$). Posterior estimates come from fitting the model described by equations 1-3. (C) Species synchrony, which ranges from zero (perfectly asynchronous) to one (perfectly synchronous), from model simulations where both random year effects and species-specific snow effects are included (``Full Model''), just snow effects are included (``Snow Only''), and just random year effects are included (``Year Effects Only''). In this example, both snow effects and random year effects are important for compensatory dynamics because removing them increases synchrony.}
+\end{figure}
+
+\subsection{Q2: What are the environmental drivers of observed compensatory dynamics?}
+Previous research in the NWT tundra plant ecosystem shows that annual snow depth is an important predictor of plant community composition and population growth [@Litaor2008].
+If species, or intraspecific populations in different locations, have unique responses to snow depth, then compensatory dynamics will arise as snow depth varies year-to-year.
+
+I will use a flexible, dynamic spatiotemporal statistical model to estimate species- and population-specific responses to snow depth and other environmental factors.
+As an example, consider the Saddle Grid community at NWT, but with only two species, where snow depth varies across a spatial gradient and from year-to-year (Fig. 1A).
+I can model species *i*'s abundance (*z*) at location *j* and time *t* conditional on observations ($y_{i,j,t}$) using a Bayesian state-space model:
+\vspace{-2em}
+\begin{align}
+y_{i,j,t} &\sim \mathcal{N}(z_{i,j,t}, \sigma_{obs.}^2), \\ 
+z_{i,j,t} &\sim \mathcal{N}(\mu_{i,j,t}, \sigma_{proc.}^2), \\
+\mu_{i,j,t} &= \alpha_{i,t} + \beta_{i}z_{i,j,t-1} + \gamma_{i}x_{j,t},
+\end{align}
+\vspace{-2em}
+\noindent{}where $\mu_{i,j,t}$ is expected abundance of species *i* at location *j* and time *t*, $\alpha_{i,t}$ is a time-varying intercept for species *i*, $\beta_{i}$ is the intraspecific density-dependence term for species *i*, $\gamma_{i}$ is the effect of snow depth for species *i*, and $x_{j,t}$ is snow depth at location *j* and time *t*.
+State-space models are ideal for modeling time series with missing observations, such as the Saddle Grid data, because they separate the process (dynamic model of *z*) and the observations (likelihood condition on *y*).
+
+The correlation among species' random year effects ($\alpha$s) and the species-specific responses to snow depth ($\gamma$s) determine species synchrony through time.
+I will fit the $\gamma$ terms hierarchically, where the species share a mean response.
+If the species-specific $\gamma$s (snow depth effects) do not differ, then there is no evidence that snow depth responses determine synchrony.
+
+As an example, I simulated data for two species sampled at 64 locations for ten years across a snow depth gradient similar to the Saddle Grid data (Fig. 1A).
+Fitting the model described in equations 1-3 shows that random year effects are positively correlated, but not perfectly (posterior mean = 0.57), and that the two species have unique responses to snow depth (Fig. 1B).
+I then simulated the model using random snow years to determine the relative influence of snow depth and other environmental factors on species synchrony (Fig. 1C)[^1]. 
+
+[^1]: ```R``` code here: http://github.com/atredennick/state_space_synchrony.
+
+This example averages over space, but the real analysis will not.
+The process model in equation 3 will include a spatiotemporal effect and interspecific competition [@Farrer2014].
+The spatiotemporal effect will allow spatial asynchrony to emerge from the model due to, for example, local communities having different responses depending on average snow depth.
+I will use the fitted model to simulate NWT tundra vegetation community dynamics with and without mechanisms that determine synchrony (e.g., year effects, species-specific responses, population-specific responses, and spatial effects).
+Doing so will allow me to partition compensatory dynamics, and its drivers, across levels of ecological and spatial organization.
+
+In support of NWT LTER VII **Hypothesis H4**, I will use the model to scale community dynamics to ecosystem functioning at the plot (ANPP data) and landscape (flux tower data) levels.
+The methods developed for this project will also be useful for answering similar questions in other NWT ecosystems, such as the Green Lakes' phytoplankton communities.
+
+\subsection{Q3: Will predicted climate change cause stability to increase or decrease through its affect on compensatory dynamics?}
+With the fitted model from question Q2 in hand, it is straightforward to study scenarios of climate change by altering the climate-related covariates.
+Many "what if?" questions will be answerable, such as:
+\begin{itemize}[noitemsep,nolistsep]
+\item If snow depth becomes more/less variable through time and/or space, how do compensatory dynamics change?
+\item How much do compensatory dynamics across all levels impact ecosystem stability under climate change scenarios?
+\end{itemize}
+\noindent{}I will focus on the most relevant simulations given projected climate changes at NWT.
+To identify the specific mechanisms affected by climate change, I will take a "leave-one-mechanism-out" approach as described for question Q2 for each climate change scenario.
+Such a modeling exercise will pinpoint the exact level of spatial and ecological organization at which climate change will disrupt ecosystem stability.
+
+\subsection{Q4: Do opposing demographic responses to climate create compensatory dynamics among populations within species?}
+Local communities can fluctuate asynchronously across a landscape (beta variability) because of species turnover (beta diversity) or intraspecific populations responding differentially to environmental conditions.
+In the latter case, the mechanism may be demographic compensation, where individual vital rates have opposing trends across an environmental gradient [@Doak2010].
+I will first disentangle the relative effects of beta diversity and demographic compensation on beta variability using variance partitioning and treating rows of the Saddle Grid as replicates.
+Second, I will use available demographic data to fit population-specific vital rate regressions for focal species.
+I will use the randomization approach described by @Villellas2015 to statistically test for demographic compensation.
+Third, I will build stochastic Integral Projection Models using the vital rate regressions to explore the impact of climate change on focal plant species.
+
+\section{Roles of Fellow and Mentor}
+Andrew Tredennick (the Postdoctoral Fellow) will lead all aspects of the proposed work with input from Katharine Suding and Dan Doak (the Mentors).
+Suding and Doak will provide detailed knowledge of the data sets, study system, and NWT goals.
+Tredennick and Suding will lead manuscripts for questions Q1, Q2, and Q3, with input from Doak and NWT collaborators (e.g., Lauren Hallett).
+Tredennick and Doak will lead the manuscript for question Q4, with input from Suding and NWT collaborators (e.g., Megan Peterson).
+Tredennick brings expertise in hierarchical Bayesian modeling, dynamic population models, and simulation approaches for gaining mechanistic insight into the drivers of synchrony.
+Thus, the Fellow and Mentors are uniquely poised to take on the proposed research.
+
+\section{Timeline}
+I (the Fellow) will begin the fellowship in July 2017. 
+The first summer will be spent accessing and cleaning the data set(s) and site visits to Niwot Ridge. 
+Subsequent semesters will be spent sequentially addressing each research question and engaging with other NWT synthesis efforts, such as the recently funded NCEAS working group on compensatory dynamics.
+Benchmarks for manuscript preparation and submission are listed below.
+The fellowship will end June 2019.
+
+\footnotesize{}
+
+| Time period | Goals |
+| ----------- | ----- |
+| Summer 2017 | Access and clean data tundra plant data; calculate hierarchical *CV*s for Q1 |
+| Fall 2017   | Start fitting and simulating dynamic models for Q2 |
+| Spring 2018 | Finish analysis for Q2; write and submit first manuscript on Q1 and Q2 |
+| Summer 2018 | Start model simulations for future climate; access demographic data; present at ESA |
+| Fall 2018   | Finish simulations for Q3 and write manuscript; begin demographic modeling for Q4 |
+| Spring 2019 | Submit Q3 manuscript; finalize demographic analysis and begin writing manuscript |
+| Summer 2019 | Submit Q4 manuscript; shepherd papers through review |
+
+\normalsize{}
+
+\setlength{\parindent}{0ex}
+
+<!--0
+\section{References}
+Bai, Y. *et al.*, *Nature* **431**, 181-184 (2004)  
+Doak, D.F and W.F. Morris, *Nature* **467**, 959-962 (2010)  
+Farrer, E.C. *et al.*, *Global Change Biology* **20**, 1238-1250 (2014)  
+Gonzalez, A. and M. Loreau, *Ann. Rev. Ecol. Evol. and Sys.* **40**, 393-414 (2009)  
+Litaor, M.I. *et al.*, *JGR: Biogeosciences* **113**, G02008 (2008)  
+Loreau, M. and C. de Mazancourt, *The American Naturalist*, **172**, E48-E66 (2008)  
+Villellas, J. *et al.*, *Ecology Letters* **18**, 1139-1152 (2015)  
+Wang, S. and M. Loreau, *Ecology Letters* **17**, 891-901 (2014)
+--->
+
+\setlength{\parskip}{0.23em}
+
+# References
+\normalsize{}

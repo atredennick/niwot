@@ -1,0 +1,57 @@
+---
+output: pdf_document
+fontsize: 12pt
+linkcolor: black
+urlcolor: black
+geometry: margin=1in
+header-includes:
+   - \usepackage{times}
+   - \usepackage[dvipsnames]{xcolor}
+   - \usepackage{enumitem}
+   - \setlist[description]{topsep=30pt,itemsep=5pt,font={\mdseries\sffamily\color{MidnightBlue}}}
+   - \usepackage{footmisc}
+   - \usepackage{scrextend}
+   - \definecolor{mycol}{gray}{0.1}
+   - \color{mycol}
+---
+\pagenumbering{gobble}
+\renewcommand*{\footnotelayout}{\tiny\sffamily}
+
+\begin{flushright}
+\color{gray}{\textsf{\footnotesize{Department of Wildland Resources \& \\ the Ecology Center \\ Utah State University \\ 5230 Old Main Hill, NR 324 \\ Logan, UT 84322}}} \\
+\vspace{1em}
+\color{gray}{\textsf{\footnotesize{\today}}}
+\end{flushright}
+
+\vspace{-2em}
+
+\begin{flushleft}
+\color{gray}{\textsf{\footnotesize{Niwot LTER Postdoctoral Fellowship Committee \\
+Institute of Alpine and Arctic Research (INSTAAR) \\
+University of Colorado \\
+Boulder, CO 80303}}}
+\end{flushleft}
+
+\vspace{1em}
+
+Dear Niwot LTER Postdoctoral Fellowship Committee,
+
+I am very excited to apply for the Niwot Ridge LTER Postdoctoral Synthesis Fellowship. I am currently an NSF Postdoctoral Fellow in Biology and Mathematics advised by Peter Adler at Utah State University and Fred Adler at the University of Utah. I received my PhD in Ecology at Colorado State University in August 2014 under Niall Hanan. 
+
+My research aims to discover the processes that determine the stability of ecosystem functioning in time and space. I use dynamic, multi-species population models, fit to long term data, that allow me to target specific mechanisms at the population and community levels that ultimately affect ecosystem functioning. My recent work has demonstrated that species-specific responses to environmental conditions, not species interactions, determine species synchrony in natural plant communities. Along with advancing our basic understanding of plant community dynamics and structure, ecologists are increasingly being pressed to forecast the impacts of climate change. To meet this need, I have led efforts to develop plant population forecasts at large spatial scales by combining dynamic modeling approaches and remotely sensed time series.
+
+My two research foci (ecosystem stability and ecological forecasting) make me a perfect candidate for the proposed NWT LTER synthesis project on compensatory dynamics (NWT LTER VII Hypothesis 3). My expertise in dynamic population modeling and theory on compensatory dynamics puts me in an excellent position to synthesize the long-term data available from the NWT LTER to further our fundamental understanding of the causes and consequences of compensatory dynamics in natural ecosystems.
+
+Attached to this application is a PDF containing my research proposal and curriculum vitae. Thank you for your time and consideration.
+
+\vspace{1em}
+
+\begin{addmargin}[2.5in]{0em}
+Sincerely, \\
+\\
+
+Andrew Tredennick \\
+Postdoctoral Fellow
+\end{addmargin}
+
+
